@@ -1,0 +1,194 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% Font Awesome package for icons
+\usepackage{fontawesome5}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine-readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Sushrut Tabakade} \\ \vspace{8pt}
+    \small \Mobilefone~9893272473 $|$ \faEnvelope~\href{mailto:x@.com}{\underline{sushrut.tab1998@gmail.com}} $|$ 
+    \faLinkedin~\href{https://linkedin.com/in/stabakade/}{\underline{linkedin.com/in/stabakade}} $|$
+    \faGithub~\href{https://github.com/stabakade}{\underline{github.com/stabakade}}
+\end{center}
+
+\section{Skills} 
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Back End}{: Golang, Kubernetes, Docker, Kafka, PostgreSQL, Elasticsearch, Redis, AWS, Java, CI/CD, Helm} \\
+%     \textbf{Dev Ops}{: Docker, Kubernetes,Helm, AWS, Gitlab, Openstack } \\
+     \textbf{Other}{: Git, REST, System Design, Shell Script, Distributed System, Data Structures, Algorithms, Cloud,Unix}}}
+ \end{itemize}
+ 
+ 
+ 
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Shri GS Institute of Technology and Science}{Indore, India}
+      {Bachelor of Engineering in Electronics and Telecommunication}{Jul 2016 -- Apr 2020}
+  \resumeSubHeadingListEnd
+  
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+	\resumeSubheading
+      {CBTS (American Express)}{Nov 2024 -- Present}
+      {Senior Software Engineer}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Enhanced product reliability by improving unit tests, refining QA stages and validating \textbf{multi-environment deployments} while contributing to pipeline build stages}
+		\resumeItem{Identified, raised, and resolved \textbf{critical security vulnerabilities} across multiple modules}
+        \resumeItem{Performed feature integrations for \textbf{Amazon} pay with points services}\phantom{GCP, Terraform, Spring}
+        \resumeItem{\textbf{Knowledge leveraged}: Golang, Kafka, gRPC, Java, Spring Boot, Elasticsearch, Jenkins}
+      \resumeItemListEnd
+          \vspace{10pt}
+          
+    \resumeSubheading
+      {F5 Networks}{Jan 2022 -- Oct 2024}
+      {Software Engineer II}{Hyderabad, India}
+      \resumeItemListStart
+        \resumeItem{Single-handedly implemented \textbf{Roles Based Access Control (RBAC)} for a distributed architecture-based product,
+enhancing security and access control measures \phantom{J2EE, Java, Redis}}
+		\resumeItem{Worked on developing microservices from scratch using Golang for a cloud native application and wrote functional tests
+using \textbf{Gingko} \phantom{AWS, Go, Jenkins, Terraform, Java, Golang}}
+        \resumeItem{Implemented core components using \textbf{TDD}, including a shared \textbf{Kafka} library leveraged by multiple features to establish seamless Kafka integration \phantom{Distributed systems, Java, Spring boot}}
+        \resumeItem{Designed and implemented task manager as a service with gRPC endpoints for seamless task creation and management using \textbf{gocron} library, \textbf{gRPC}, and \textbf{Kafka} \phantom{Hibernate, Security, Spring boot}}
+        \resumeItem{Integrated \textbf{Redis} as an in-memory data store to optimize caching and reduce database load by up to \textbf{20\%} \phantom{Golang, Concurrency, Linux scripting, Test Driven Development(TDD), ReactJS, SOLID}}
+        \resumeItem{Worked on the user management of application and SMTP mail server with full \textbf{CRUD} support. Used \textbf{PostgreSQL} and \textbf{vault} for data storage.}
+        \resumeItem{Performed regular \textbf{Threat Model Assessment} for features to estimate and mitigate security vulnerabilities \phantom{Computer Networks, IPV4/6,TCP,UDP,HTTP,L4-L7, DNS, Openshift}}
+        \resumeItem{\textbf{Knowledge leveraged}: Golang, Kubernetes, Docker, gRPC, PostgreSQL, Kafka, Shell Scripting, AWS, Redis, Distributed Architecture, Microservices, NATS, REST, React}\phantom{HTML/CSS,Javascript,Redis}
+      \resumeItemListEnd
+          \vspace{10pt}
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Amdocs}{Sept 2020 -- Jan 2022}
+      {Software Engineer}{Pune, India}
+      \resumeItemListStart
+        \resumeItem{Developed core billing applications and wrote \textbf{PL/SQL} to clear redundant data, resulting in a significant reduction in database load time \phantom{Spring boot, Hibernate, Security, J2EE, Terraform, Spring}}
+        \resumeItem{Took initiative to develop a \textbf{Site Reliability Engineering (SRE)} tool to automate the process of bouncing WebLogic servers, significantly reducing manual effort by \textbf{30 hours per month}}
+		\resumeItem{\textbf{Knowledge leveraged}: Java, J2EE, Oracle PL/SQL, Shell Scripting, Unix, SOAP, Python, Flask}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
